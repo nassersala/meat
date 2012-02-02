@@ -2,6 +2,7 @@
 %h1 Sign up
 
 = form_for(@user) do |f|
+	= render 'shared/error_messages'
 	%div.field
 		= f.label :name
 		%br
