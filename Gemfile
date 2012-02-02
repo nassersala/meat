@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 gem 'bcrypt-ruby', '3.0.1'
-
+gem 'haml'
+gem 'jquery-rails', '2.0.0'
 
 group :assets do
   gem 'sass-rails',   '3.2.3'
@@ -10,7 +11,6 @@ group :assets do
   gem 'uglifier', '1.0.3'
 end
 
-gem 'jquery-rails', '2.0.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
