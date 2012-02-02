@@ -1,6 +1,5 @@
 MeetThere::Application.routes.draw do
-  get "users/new"
-  
+  resources :users
   match '/signup', to: 'users#new'
 
   match '/help',    to: 'static_pages#help'
