@@ -1,0 +1,20 @@
+%html
+	%head
+		%title
+			= full_title(yield(:title))
+	= render 'layouts/stylesheets'
+	= javascript_include_tag "application"
+	= csrf_meta_tags
+	
+	%body
+		%div.container
+			= render 'layouts/header'
+			%section.round
+				- flash.each do |key, value|
+					%div{ :class => ['flash', key] }= value
+				
+				= yield
+		= render 'layouts/footer'
+		= debug(params) if Rails.env.development?
+
+
