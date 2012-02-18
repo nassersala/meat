@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 gem 'bcrypt-ruby', '3.0.1'
+gem 'faker', '1.0.1'
+gem 'will_paginate', '3.0.3'
 gem 'haml'
 gem 'jquery-rails', '2.0.0'
 
